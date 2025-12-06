@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="100%" height="100%" fill="#06131a" />
+  <text x="80" y="160" font-family="Sora, sans-serif" font-size="64" fill="#d0aa5f">Breton Revival</text>
+  <text x="80" y="260" font-family="Inter" font-size="40" fill="#f7fbf9">Join us — music, immersion, mentors</text>
+  <rect x="80" y="320" width="920" height="540" rx="16" fill="#0d1a1f" />
+  <text x="540" y="980" font-family="Inter" font-size="28" fill="#f7fbf9" text-anchor="middle">Learn one word a day • Attend an event • Mentor a learner</text>
+  <rect x="360" y="1060" width="360" height="84" rx="12" fill="#d0aa5f" />
+  <text x="540" y="1116" font-family="Inter" font-size="28" fill="#06220f" text-anchor="middle">Get Involved</text>
+</svg>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breton Music & Song Festival</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Sora", sans-serif;
+      }
+      .poster {
+        width: 8.5in;
+        height: 11in;
+        background: linear-gradient(
+          135deg,
+          #0a1628 0%,
+          #1a2942 50%,
+          #0f1d2e 100%
+        );
+        color: #f8fafc;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .poster::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(
+          circle,
+          rgba(59, 130, 246, 0.15) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+      .poster::after {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(251, 191, 36, 0.1) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+      }
+      .music-icons {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 20px 0;
+        background: linear-gradient(135deg, #60a5fa 0%, #fbbf24 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .subtitle {
+        font-size: 1.8rem;
+        color: #fbbf24;
+        margin: 20px 0;
+        font-weight: 500;
+      }
+      .date-box {
+        background: rgba(251, 191, 36, 0.15);
+        border: 2px solid rgba(251, 191, 36, 0.3);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 30px 0;
+      }
+      .date-box p {
+        margin: 10px 0;
+      }
+      .date-title {
+        font-size: 1.5rem;
+        color: #fbbf24;
+        font-weight: 600;
+      }
+      .date-location {
+        font-size: 1.2rem;
+        color: #a8b8cf;
+      }
+      .description {
+        font-size: 1.3rem;
+        margin: 30px 0;
+        color: #e0e7ff;
+        line-height: 1.6;
+      }
+      .description strong {
+        color: #60a5fa;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 30px 0;
+        width: 100%;
+      }
+      .feature {
+        background: rgba(96, 165, 250, 0.15);
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+      .feature:nth-child(even) {
+        background: rgba(251, 191, 36, 0.15);
+        border-color: rgba(251, 191, 36, 0.3);
+      }
+      .cta {
+        background: linear-gradient(135deg, #3b82f6, #60a5fa);
+        padding: 20px 40px;
+        border-radius: 12px;
+        margin: 30px 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .website {
+        font-size: 1rem;
+        color: #a8b8cf;
+        margin-top: 20px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poster">
+      <div class="content">
+        <div class="music-icons">🎵 🎸 🎵</div>
+        <h1>Breton Music &<br />Song Festival</h1>
+        <p class="subtitle">🎵 Celebrate Celtic Heritage 🎵</p>
+        <div class="date-box">
+          <p class="date-title">July 18–20</p>
+          <p class="date-location">Local Halls & Coastal Venues</p>
+        </div>
+        <p class="description">
+          Sing. Dance. Learn.<br />
+          <span style="color: #60a5fa; font-size: 1.1rem"
+            >Concerts • Workshops • Youth Showcases</span
+          >
+        </p>
+        <div class="features">
+          <div class="feature">🎤 Live Music</div>
+          <div class="feature">💃 Dancing</div>
+          <div class="feature">🎓 Workshops</div>
+          <div class="feature">🌟 Community</div>
+        </div>
+        <div class="cta">🎟️ REGISTER NOW</div>
+        <p class="website">bretonrevival.example</p>
+      </div>
+    </div>
+  </body>
+</html>

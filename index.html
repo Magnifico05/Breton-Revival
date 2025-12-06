@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Breton Revival — Home</title>
+    <meta
+      name="description"
+      content="Breton Revival Campaign — Learn, explore, and experience the Breton language through events, trips, culture, and community."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --hero-img: url("breton-landscape.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="brand">
+          <div class="logo">BR</div>
+          <div style="font-family: Cinzel, serif; font-size: 1.4rem">
+            Breton Revival
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="learn.html">Learn</a>
+          <a href="events.html">Events</a>
+          <a href="culture.html">Culture Trips</a>
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <meta name="viewport" content="width=device-width,initial-scale=1" />
+              <title>Breton Revival — Moved</title>
+              <style>
+                body{font-family:Inter, system-ui, -apple-system;background:#06131a;color:#f7fbf9;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+                .box{max-width:720px;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+                a{color:#d0aa5f}
+              </style>
+            </head>
+            <body>
+              <div class="box">
+                <h1 style="font-family:Cinzel, serif;margin-top:0">Breton Revival — Site moved</h1>
+                <p class="kv">This site has been migrated to a React-based app in the `react-app` folder. To run the development site locally, follow the instructions in <a href="react-app/README.md">react-app/README.md</a> or run the included PowerShell script below.</p>
+                <p class="kv">Quick command (PowerShell):</p>
+                <pre style="background:#06131a;padding:12px;border-radius:8px;color:#9fb4ac">.
+          cd "c:\Users\Ali\Documents\Ali\University\Fall 25\Breton"
+          ./run-dev.ps1
+          </pre>
+                <p class="kv">If you want the original static pages, they are still in this folder under their original filenames.</p>
+              </div>
+            </body>
+          </html>
+      const words = [
+        { w: "kenavo", m: "goodbye", p: "/keˈnavɔ/" },
+        { w: "demat", m: "hello", p: "/deˈmat/" },
+        { w: "trugarez", m: "thank you", p: "/truɡaˈrez/" },
+        { w: "bremañ", m: "now", p: "/brəˈmã/" },
+        { w: "yecʼhed", m: "cheers", p: "/jɛxɛt/" },
+      ];
+
+      let i = 0;
+      let autoTimer = null;
+
+      function loadWord() {
+        const w = words[i];
+        const el = document.getElementById("wod-card");
+        el.innerHTML = `<div class="wod-card">
+            <div class="wod-word">${w.w}</div>
+            <div>${w.m}</div>
+            <div class="kv"><em>${w.p}</em></div>
+            <a class="cta" style="margin-top:10px;cursor:pointer;" onclick="nextWord()">Next</a>
+          </div>`;
+      }
+
+      function nextWord() {
+        i = (i + 1) % words.length;
+        loadWord();
+      }
+
+      function startAutoRotate() {
+        stopAutoRotate();
+        autoTimer = setInterval(nextWord, 6000);
+      }
+
+      function stopAutoRotate() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      // initialize
+      loadWord();
+      startAutoRotate();
+
+      // pause when user hovers the card
+      const wodCard = document.getElementById("wod-card");
+      if (wodCard) {
+        wodCard.addEventListener("mouseenter", stopAutoRotate);
+        wodCard.addEventListener("mouseleave", startAutoRotate);
+      }
+    </script>
+  </body>
+</html>

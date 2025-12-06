@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="100%" height="100%" fill="#06131a" />
+  <circle cx="540" cy="360" r="220" fill="#223b32" />
+  <text x="540" y="360" font-family="Sora, sans-serif" font-size="64" fill="#d0aa5f" text-anchor="middle" dominant-baseline="middle">FESTIVAL</text>
+  <text x="540" y="580" font-family="Inter" font-size="32" fill="#f7fbf9" text-anchor="middle">Music • Stories • Dance</text>
+  <rect x="320" y="700" width="440" height="80" rx="12" fill="#d0aa5f" />
+  <text x="540" y="750" font-family="Inter" font-size="28" fill="#06220f" text-anchor="middle">Tickets & Info</text>
+</svg>

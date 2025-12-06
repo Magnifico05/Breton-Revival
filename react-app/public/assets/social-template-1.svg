@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#2b6b51" />
+      <stop offset="1" stop-color="#d0aa5f" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#06131a" />
+  <rect x="60" y="60" width="1080" height="1080" rx="28" fill="url(#g)" opacity="0.08" />
+  <g transform="translate(120,200)">
+    <text x="0" y="0" font-family="Sora, sans-serif" font-size="72" fill="#f7fbf9">WORD OF THE DAY</text>
+    <text x="0" y="120" font-family="Inter, system-ui" font-size="160" fill="#f7fbf9" font-weight="700">DEMAT</text>
+    <text x="0" y="220" font-family="Inter, system-ui" font-size="48" fill="#f7fbf9">hello — /deˈmat/</text>
+    <rect x="0" y="300" width="420" height="72" rx="12" fill="#f7fbf9" />
+    <text x="28" y="346" font-family="Inter, system-ui" font-size="28" fill="#06220f">Learn more</text>
+  </g>
+</svg>
